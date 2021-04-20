@@ -3,7 +3,7 @@ import NavBarMenu from "./NavBarMenu";
 
 const NavBar = () => {
 	return (
-		<div className="absolute top-0 bg-pink-100 sm:relative ">
+		<div className="absolute top-0 hidden bg-pink-100 sm:relative sm:block">
 			<div className="container px-6 py-1 mx-auto text-gray-600 sm:px-6 md:px-12 sm:py-4">
 				<div className="flex flex-row justify-between mx-auto font-serif text-sm ">
 					<h1>Logo</h1>

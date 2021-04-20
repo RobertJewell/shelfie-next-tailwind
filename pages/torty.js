@@ -1,9 +1,13 @@
 import NavBar from "../components/NavBar";
 import InfoSection from "../components/InfoSection";
+import { motion } from "framer-motion";
 
 export default function torty() {
 	return (
-		<section className="flex flex-col items-center justify-center h-screen max-h-screen font-serif bg-pink-100 min-h-600">
+		<motion.section
+			exit={{ opacity: 0 }}
+			className="flex flex-col items-center justify-center h-screen max-h-screen font-serif bg-pink-100 min-h-600"
+		>
 			{/* <NavBar></NavBar> */}
 			<InfoSection
 				title="Torty"
@@ -28,6 +32,6 @@ export default function torty() {
 					i jeden rodzaj nasączenia.
 				</p>
 			</InfoSection>
-		</section>
+		</motion.section>
 	);
 }

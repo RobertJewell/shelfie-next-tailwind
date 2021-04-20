@@ -34,7 +34,7 @@ export default function ProductFeature({
 					<h1 className="mb-8 text-5xl text-pink-500 sm:text-6xl ">{title}</h1>
 					{children}
 					<div className="mt-4">
-						<Link href={pageLink}>
+						<Link href={pageLink} scroll={false}>
 							<a className="px-4 py-3 mt-4 text-sm text-pink-500 transition duration-100 ease-in-out bg-pink-200 rounded-xl hover:shadow-lg">
 								Details
 							</a>

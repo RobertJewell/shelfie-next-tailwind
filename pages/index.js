@@ -2,10 +2,14 @@ import Head from "next/head";
 import NavBar from "../components/NavBar";
 import Image from "next/image";
 import ProductFeature from "../components/ProductFeature";
+import { motion } from "framer-motion";
 
 export default function Home() {
 	return (
-		<div className="font-serif bg-pink-100 sm:overflow-y-scroll sm:h-screen snap snap-y snap-mandatory sm:py-0">
+		<motion.div
+			exit={{ opacity: 0 }}
+			className="font-serif bg-pink-100 sm:overflow-y-scroll sm:h-screen snap snap-y snap-mandatory sm:py-0"
+		>
 			<NavBar></NavBar>
 			{/* landing */}
 			<section className="container px-6 mx-auto overflow-y-hidden sm: md:px-12">
@@ -104,6 +108,6 @@ export default function Home() {
 					soufflé. Cookie bonbon sweet cheesecake sweet gummi bears.
 				</p>
 			</ProductFeature>
-		</div>
+		</motion.div>
 	);
 }
