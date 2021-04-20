@@ -10,7 +10,7 @@ export default function torty() {
 				direction="flex-row"
 				imageSource="/images/cake-naked-01--large.png"
 				imageAlt="cake"
-				backLink="./#landing-torty"
+				backLink=".#landing-torty"
 			>
 				<p className="mb-6">
 					Torty są wykonane z własnoręcznie przygotowanego biszkoptu (mąka,
