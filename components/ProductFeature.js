@@ -33,12 +33,12 @@ export default function ProductFeature({
 				<div className="flex flex-col justify-center text-center h-3/5 sm:h-full sm:w-1/2 sm:text-left">
 					<h1 className="mb-8 text-5xl text-pink-500 sm:text-6xl ">{title}</h1>
 					{children}
-					<div>
-						<button className="px-3 py-2 mt-4 text-pink-500 transition duration-100 ease-in-out bg-pink-200 rounded-xl hover:shadow-lg">
-							<Link href={pageLink}>
-								<a>Details</a>
-							</Link>
-						</button>
+					<div className="mt-4">
+						<Link href={pageLink}>
+							<a className="px-4 py-3 mt-4 text-sm text-pink-500 transition duration-100 ease-in-out bg-pink-200 rounded-xl hover:shadow-lg">
+								Details
+							</a>
+						</Link>
 					</div>
 				</div>
 			</div>
