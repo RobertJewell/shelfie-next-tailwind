@@ -4,7 +4,7 @@ const NavBarMenu = () => {
 	const [open, setOpen] = useState(false);
 
 	const dropdownPanel = (
-		<div className="h-full " onMouseLeave={() => setOpen(false)}>
+		<div className="h-full ">
 			<div className="absolute p-4 mt-2 bg-white rounded shadow-lg top-4 ring-2 ring-pink-200 backdrop-filter backdrop-opacity-70 backdrop-blur-md">
 				<ul className="-my-2">
 					<li className="py-2 cursor-pointer hover:text-pink-600 ">Cakes</li>
@@ -16,7 +16,11 @@ const NavBarMenu = () => {
 	);
 
 	return (
-		<div className="relative w-16" onMouseEnter={() => setOpen(true)}>
+		<div
+			className="relative w-16 pb-6"
+			onMouseEnter={() => setOpen(true)}
+			onMouseLeave={() => setOpen(false)}
+		>
 			<div className="absolute flex flex-row w-16 text-gray-600 cursor-pointer">
 				<li className="text-center">Menu</li>
 				<svg
