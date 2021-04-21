@@ -25,17 +25,6 @@ const fadeInUp = {
 	},
 };
 
-const fadeInUpDelay = {
-	initial: { y: 60, opacity: 0 },
-	animate: {
-		y: 0,
-		opacity: 1,
-	},
-	transition: {
-		delay: 1,
-	},
-};
-
 export default function InfoSection({
 	title,
 	bgColor,
@@ -102,7 +91,10 @@ export default function InfoSection({
 					// If it's flex-row, move it to the right a bit, else, add some padding on the right
 					// This is ugly, and only works from horizontal flex
 					<motion.div
-						variants={fadeInUpDelay}
+						variants={fadeInUp}
+						initial="initial"
+						animate="animate"
+						transition={{ delay: 0.8 }}
 						className={`relative hidden  ${
 							direction === "flex-row" ? "top-12 left-6" : " top-12 right-6"
 						} lg:px-16 md:block`}
