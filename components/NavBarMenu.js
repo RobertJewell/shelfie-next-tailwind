@@ -17,11 +17,11 @@ const NavBarMenu = () => {
 
 	return (
 		<div
-			className="relative w-16 pb-6"
+			className="relative w-16 pb-6 cursor-pointer"
 			onMouseEnter={() => setOpen(true)}
 			onMouseLeave={() => setOpen(false)}
 		>
-			<div className="absolute flex flex-row w-16 text-gray-600 cursor-pointer">
+			<div className="absolute flex flex-row w-16 text-gray-600 ">
 				<li className="text-center">Menu</li>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
