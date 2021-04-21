@@ -97,11 +97,11 @@ export default function InfoSection({
 						transition={{ delay: 0.8 }}
 						className={`relative hidden  ${
 							direction === "flex-row" ? "top-12 left-6" : " top-12 right-6"
-						} lg:px-16 md:block`}
+						} lg:px-12 md:block`}
 					>
-						<div className="w-64 h-64 border-4 border-pink-200 rounded-full "></div>
+						<div className="border-4 border-pink-200 rounded-full w-80 h-80 "></div>
 						<Image
-							className="object-contain w-64 h-64"
+							className="object-contain w-80 h-80"
 							src={imageSource}
 							alt={imageAlt}
 							layout="fill"
