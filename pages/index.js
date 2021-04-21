@@ -14,9 +14,10 @@ export default function Home() {
 		>
 			<NavBar></NavBar>
 			{/* landing */}
-			<section className="container px-6 mx-auto sm: md:px-12">
-				<div className="flex flex-col items-center justify-between h-full mx-auto sm:flex-row ">
-					<div className="w-full my-6 text-center sm:w-1/2 sm:text-left ">
+			<section className="container flex justify-center px-6 mx-auto min-h-700 md:px-12 sm:min-h-400">
+				<div className="flex flex-col items-center justify-around mx-auto sm:flex-row ">
+					{/* Text */}
+					<div className="w-full mt-16 text-center sm:w-1/2 sm:text-left sm:mt-0 sm:mb-12">
 						<h1 className="text-5xl text-pink-500 sm:text-6xl ">
 							Zjedzmy trochę słodkości
 						</h1>
@@ -31,7 +32,8 @@ export default function Home() {
 							</Link>
 						</div>
 					</div>
-					<div className="relative mx-auto bottom-4 h-96 w-96">
+					{/* Image */}
+					<div className="relative mx-auto w-80 h-80 bottom-4 sm:w-96 sm:h-96">
 						<Image
 							className="object-contain"
 							src="/images/cake-classic-01--large.png"
