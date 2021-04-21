@@ -1,8 +1,10 @@
 import Head from "next/head";
-import NavBar from "../components/NavBar";
 import Image from "next/image";
-import ProductFeature from "../components/ProductFeature";
+import Link from "next/link";
 import { motion } from "framer-motion";
+
+import NavBar from "../components/NavBar";
+import ProductFeature from "../components/ProductFeature";
 
 export default function Home() {
 	return (
@@ -14,17 +16,20 @@ export default function Home() {
 			{/* landing */}
 			<section className="container px-6 mx-auto sm: md:px-12">
 				<div className="flex flex-col items-center justify-between h-full mx-auto sm:flex-row ">
-					<div className="w-full text-center sm:my-6 sm:w-1/2 sm:text-left ">
-						<h1 className="mt-8 text-5xl text-pink-500 sm:text-6xl ">
+					<div className="w-full my-6 text-center sm:w-1/2 sm:text-left ">
+						<h1 className="text-5xl text-pink-500 sm:text-6xl ">
 							Zjedzmy trochę słodkości
 						</h1>
 						<h3 className="mt-4 text-sm text-gray-600 sm:text-md">
 							Pracownia cukiernicza
 						</h3>
-
-						<button className="px-3 py-2 my-8 text-white transition duration-100 ease-in-out bg-pink-500 rounded-xl hover:shadow-lg">
-							Złóż zamówienie
-						</button>
+						<div className="mt-12">
+							<Link href="orderForm" scroll={false}>
+								<a className="px-4 py-3 my-4 text-sm text-white transition duration-100 ease-in-out bg-pink-500 rounded-xl hover:shadow-lg">
+									Złóż zamówienie
+								</a>
+							</Link>
+						</div>
 					</div>
 					<div className="relative mx-auto bottom-4 h-96 w-96">
 						<Image
@@ -76,7 +81,7 @@ export default function Home() {
 				direction="sm:flex-row"
 				imageSource="/images/cake-naked-01--large.png"
 				imageAlt="Naked Cake"
-				pageLink="/torty"
+				pageLink="/info-torty"
 				title="Torty"
 				id="landing-torty"
 			>
@@ -98,7 +103,7 @@ export default function Home() {
 				direction="sm:flex-row-reverse"
 				imageSource="/images/cupcake.png"
 				imageAlt="Tasty cupcake"
-				pageLink="/cupcakes"
+				pageLink="/info-cupcakes"
 				title="cupcakes"
 			>
 				<p className="max-w-sm mb-4 ml-2 text-sm text-gray-600">
