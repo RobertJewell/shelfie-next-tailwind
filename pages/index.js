@@ -21,12 +21,12 @@ export default function Home() {
 						<h1 className="text-5xl text-pink-500 sm:text-6xl ">
 							Zjedzmy trochę słodkości
 						</h1>
-						<h3 className="mt-4 text-sm text-gray-600 sm:text-md">
+						<h3 className="mt-6 text-sm text-gray-600 sm:text-md">
 							Pracownia cukiernicza
 						</h3>
 						<div className="mt-12">
 							<Link href="orderForm" scroll={false}>
-								<a className="px-4 py-3 my-4 text-sm text-white transition duration-100 ease-in-out bg-pink-500 rounded-xl hover:shadow-lg">
+								<a className="px-4 py-3 my-4 text-sm text-white transition-colors bg-pink-500 rounded-xl hover:bg-pink-600">
 									Złóż zamówienie
 								</a>
 							</Link>
@@ -46,10 +46,10 @@ export default function Home() {
 			{/* About */}
 			<section className="h-screen overflow-hidden bg-white sm:max-h-500 sm:min-h-300 snap-center">
 				<div className="container flex flex-col items-center justify-around h-full mx-auto sm:justify-center sm:flex-row">
-					<div className="relative w-full h-64 mx-auto my-6 ">
+					<div className="relative w-full h-64 mx-auto my-6 px-1/3">
 						<Image
-							className="object-contain w-64 h-64"
-							src="/images/cake-naked-01--large.png"
+							className="object-contain rounded-2xl"
+							src="/images/shelfie.jpg"
 							alt="cake"
 							layout="fill"
 						/>
