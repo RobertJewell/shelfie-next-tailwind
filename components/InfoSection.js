@@ -49,7 +49,7 @@ export default function InfoSection({
 					{backLink && (
 						<motion.div
 							variants={fadeInUp}
-							className="flex items-center justify-center w-12 h-12 text-pink-500 bg-pink-200 rounded-full"
+							className="flex items-center justify-center w-12 h-12 text-pink-500 transition-colors bg-pink-200 rounded-full hover:bg-pink-300"
 						>
 							<Link href={backLink} scroll={false}>
 								<a className="flex items-center justify-center w-full h-full">
