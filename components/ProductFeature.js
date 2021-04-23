@@ -35,7 +35,7 @@ export default function ProductFeature({
 					{children}
 					<div className="mt-4">
 						<Link href={pageLink} scroll={false}>
-							<a className="px-4 py-3 mt-4 text-sm text-pink-500 transition duration-100 ease-in-out bg-pink-200 rounded-xl hover:shadow-lg">
+							<a className="px-4 py-3 mt-4 text-sm text-pink-500 transition-colors bg-pink-200 rounded-xl hover:bg-pink-300">
 								Details
 							</a>
 						</Link>
