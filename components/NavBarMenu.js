@@ -5,7 +5,7 @@ const NavBarMenu = () => {
 
 	const dropdownPanel = (
 		<div className="h-full ">
-			<div className="absolute p-4 mt-2 bg-white rounded shadow-lg top-4 ring-2 ring-pink-200 backdrop-filter backdrop-opacity-70 backdrop-blur-md">
+			<div className="absolute p-4 mt-2 bg-white rounded shadow-lg top-6 ring-2 ring-pink-200">
 				<ul className="-my-2">
 					<li className="py-2 cursor-pointer hover:text-pink-600 ">Cakes</li>
 					<li className="py-2 cursor-pointer hover:text-pink-600">Cupcakes</li>
@@ -17,7 +17,7 @@ const NavBarMenu = () => {
 
 	return (
 		<div
-			className="relative w-24 pb-6 cursor-pointer"
+			className="relative w-24 pb-8 cursor-pointer"
 			onMouseEnter={() => setOpen(true)}
 			onMouseLeave={() => setOpen(false)}
 		>
