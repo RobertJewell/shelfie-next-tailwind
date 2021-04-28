@@ -20,12 +20,22 @@ const NavBar = () => {
 							</div>
 						</a>
 					</Link>
-					<ul className="flex flex-row justify-around w-1/2">
+					<ul className="flex flex-row items-center justify-around w-1/2">
 						<NavBarMenu></NavBarMenu>
-						<li className="w-24 text-center">Galeria</li>
-						<li className="w-24 text-center">FAQ</li>
+						<li className="w-24 p-2 text-center">
+							<Link href="/">
+								<a className="w-24 p-2 text-center">Galeria</a>
+							</Link>
+						</li>
+						<li className="w-24 p-2 text-center">
+							<Link href="/">
+								<a className="w-24 p-2 text-center">FAQ</a>
+							</Link>
+						</li>{" "}
 					</ul>
-					<p>Social</p>
+					<Link href="/">
+						<a className="w-24 p-2 text-center">Social</a>
+					</Link>
 				</div>
 			</div>
 		</div>
