@@ -25,7 +25,7 @@ export default function Home() {
 							Pracownia cukiernicza
 						</h3>
 						<div className="mt-12">
-							<Link href="orderForm" scroll={false}>
+							<Link href="contact" scroll={false}>
 								<a className="px-4 py-3 my-4 text-sm text-white transition-colors bg-pink-500 rounded-xl hover:bg-pink-600">
 									Złóż zamówienie
 								</a>
