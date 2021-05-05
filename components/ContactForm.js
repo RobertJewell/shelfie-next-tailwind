@@ -113,7 +113,6 @@ export default function ContactForm() {
 						Send
 					</button>
 				</div>
-				<div className="md:w-2/3"></div>
 			</motion.div>
 		</form>
 	);
