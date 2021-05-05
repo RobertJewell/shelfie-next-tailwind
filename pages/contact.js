@@ -1,5 +1,6 @@
 import NavBar from "../components/NavBar";
 import ContactForm from "../components/ContactForm";
+import Footer from "../components/Footer";
 import { motion } from "framer-motion";
 
 const containerFade = {
@@ -40,6 +41,8 @@ export default function contact() {
 				</motion.h1>
 				<ContactForm></ContactForm>
 			</section>
+
+			<Footer footerColor="bg-white" margin={true}></Footer>
 		</motion.div>
 	);
 }

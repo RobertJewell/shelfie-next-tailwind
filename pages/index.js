@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 import ProductFeature from "../components/ProductFeature";
 
 export default function Home() {
@@ -118,6 +119,7 @@ export default function Home() {
 					soufflé. Cookie bonbon sweet cheesecake sweet gummi bears.
 				</p>
 			</ProductFeature>
+			<Footer bgColor="bg-white" footerColor="bg-pink-100"></Footer>
 		</motion.div>
 	);
 }
