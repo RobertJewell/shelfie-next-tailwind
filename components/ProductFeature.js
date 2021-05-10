@@ -21,7 +21,7 @@ export default function ProductFeature({
 				} ${direction}`}
 			>
 				<div className="relative w-56 h-56 mx-auto my-6 sm:h-64 sm:w-64 xl:w-80 xl:h-80">
-					<div className="absolute w-56 h-56 mt-8 border-4 border-pink-200 rounded-full sm:h-64 sm:w-64 xl:w-80 xl:h-80"></div>
+					<div className="absolute w-56 h-56 mt-4 border-4 border-pink-200 rounded-full sm:h-64 sm:w-64 xl:w-80 xl:h-80"></div>
 					<Image
 						className="object-contain"
 						src={imageSource}
