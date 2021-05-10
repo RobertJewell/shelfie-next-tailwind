@@ -13,14 +13,20 @@ export default function ProductFeature({
 } = props) {
 	return (
 		<section
-			className={`h-screen py-4 overflow-hidden ${bgColor} sm:max-h-600 sm:min-h-500 snap-center`}
+			className={`h-screen py-4 overflow-hidden ${bgColor} sm:max-h-600 px-6
+			md:px-12 sm:min-h-500 snap-center`}
 		>
 			<div
-				className={`container flex flex-col items-center justify-around h-full px-6 mb-6 mx-auto align-middle ${
+				className={`container flex flex-col items-center justify-around h-full mb-6 mx-auto align-middle ${
 					direction === "sm:flex-row-reverse" && "lg:pl-36"
-				} ${direction}`}
+				} 
+				${direction}`}
 			>
-				<div className="relative w-56 h-56 mx-auto my-6 sm:h-64 sm:w-64 xl:w-80 xl:h-80">
+				<div
+					className={`relative w-56 h-56 mx-auto my-6 sm:h-64 sm:w-64 xl:w-80 xl:h-80 ${
+						direction === "sm:flex-row" && "sm:ml-0 lg:mx-auto"
+					}`}
+				>
 					<div className="absolute w-56 h-56 mt-4 border-4 border-pink-200 rounded-full sm:h-64 sm:w-64 xl:w-80 xl:h-80"></div>
 					<Image
 						className="object-contain"
