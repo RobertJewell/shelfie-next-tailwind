@@ -4,8 +4,8 @@ const NavBarMenu = () => {
 	const [open, setOpen] = useState(false);
 
 	const dropdownPanel = (
-		<div className="h-full ">
-			<div className="absolute p-4 mt-2 bg-white rounded shadow-lg top-8 ring-2 ring-pink-200">
+		<div className="h-full">
+			<div className="absolute z-50 p-4 mt-2 bg-white rounded shadow-lg top-8 ring-2 ring-pink-200 ">
 				<ul className="-my-2">
 					<li className="py-2 cursor-pointer hover:text-pink-600 ">Cakes</li>
 					<li className="py-2 cursor-pointer hover:text-pink-600">Cupcakes</li>
