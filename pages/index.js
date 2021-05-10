@@ -48,7 +48,7 @@ export default function Home() {
 				</div>
 			</section>
 			{/* About */}
-			<section className="h-screen overflow-hidden bg-white sm:max-h-500 sm:min-h-300 snap-center">
+			<section className="h-screen px-6 overflow-hidden bg-white sm:max-h-500 sm:min-h-300 md:px-12 snap-center">
 				<div className="container flex flex-col items-center justify-around h-full mx-auto sm:justify-center sm:flex-row">
 					<div className="relative w-full h-64 mx-auto my-6 px-1/3">
 						<Image
