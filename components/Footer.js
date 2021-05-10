@@ -3,7 +3,7 @@ import SocialLinks from "./SocialLinks";
 
 export default function Footer({ bgColor, footerColor, margin } = props) {
 	return (
-		<div className={`${bgColor} flow-root`}>
+		<div className={`${bgColor} flow-root mt-auto`}>
 			<footer
 				className={`flow-root ${
 					margin && "mt-16"
@@ -21,7 +21,7 @@ export default function Footer({ bgColor, footerColor, margin } = props) {
 							NIP: 5833357556
 						</p>
 					</div>
-					<Link href="contact" scroll={false}>
+					<Link href="contact" scroll={true}>
 						<a className="px-4 py-3 my-6 text-sm text-pink-500 transition-colors bg-pink-200 rounded-xl hover:bg-pink-300">
 							współpraca
 						</a>

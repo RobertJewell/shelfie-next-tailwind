@@ -33,7 +33,7 @@ export default function ContactForm() {
 
 	return (
 		<form
-			className="w-full max-w-lg mx-auto mt-12"
+			className="flex-1 w-full max-w-lg mx-auto mt-12"
 			onSubmit={handleSubmit(onSubmit)}
 		>
 			<motion.div className="flex flex-wrap mb-6 -mx-3" variants={fadeInUp}>
