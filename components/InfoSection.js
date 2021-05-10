@@ -85,6 +85,13 @@ export default function InfoSection({
 					>
 						{children}
 					</motion.div>
+					<motion.div className="mt-4" variants={fadeInUp}>
+						<Link href={pageLink} scroll={false}>
+							<a className="px-4 py-3 mt-4 text-sm text-pink-500 transition-colors bg-pink-200 rounded-xl hover:bg-pink-300">
+								Details
+							</a>
+						</Link>
+					</motion.div>
 				</motion.div>
 				{/* render only if there's an image source  */}
 				{imageSource !== undefined && (
