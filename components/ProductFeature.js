@@ -20,8 +20,8 @@ export default function ProductFeature({
 					direction === "sm:flex-row-reverse" && "lg:pl-36"
 				} ${direction}`}
 			>
-				<div className="relative w-56 h-56 mx-auto my-6 sm:h-64 sm:w-64">
-					<div className="absolute w-56 h-56 mt-8 border-4 border-pink-200 rounded-full sm:h-64 sm:w-64 "></div>
+				<div className="relative w-56 h-56 mx-auto my-6 sm:h-64 sm:w-64 xl:w-80 xl:h-80">
+					<div className="absolute w-56 h-56 mt-8 border-4 border-pink-200 rounded-full sm:h-64 sm:w-64 xl:w-80 xl:h-80"></div>
 					<Image
 						className="object-contain"
 						src={imageSource}
@@ -30,7 +30,7 @@ export default function ProductFeature({
 					/>
 				</div>
 
-				<div className="flex flex-col justify-center text-center h-3/5 sm:h-full sm:w-1/2 sm:text-left">
+				<div className="z-10 flex flex-col justify-center text-center h-3/5 sm:h-full sm:w-1/2 sm:text-left">
 					<h1 className="mb-8 text-5xl text-pink-500 sm:text-6xl ">{title}</h1>
 					{children}
 					<div className="mt-4">
