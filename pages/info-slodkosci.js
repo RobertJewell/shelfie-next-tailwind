@@ -10,9 +10,9 @@ export default function torty() {
 		>
 			{/* <NavBar></NavBar> */}
 			<InfoSection
-				title="Torty"
+				title="Słodkości"
 				direction="flex-row"
-				imageSource="/images/cake-naked-01--large.png"
+				imageSource="/images/sweets/cakesicle-01.png"
 				imageAlt="cake"
 				backLink=".#landing-torty"
 				pageLink="/"

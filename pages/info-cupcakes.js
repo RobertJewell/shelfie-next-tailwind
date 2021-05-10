@@ -15,6 +15,7 @@ export default function torty() {
 				imageSource="/images/cupcake.png"
 				imageAlt="cupcake"
 				backLink="./"
+				pageLink="/"
 			>
 				<p className="mb-6">
 					Oprócz tortów zajmuję się również wykonywaniem słodkich babeczek w
