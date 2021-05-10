@@ -35,3 +35,7 @@ html {
 	/* mobile viewport bug fix */
 	max-height: -webkit-fill-available;
 }
+
+.body {
+	display: flex;
+}

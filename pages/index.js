@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+
 import { motion } from "framer-motion";
 
 import NavBar from "../components/NavBar";
@@ -15,11 +16,11 @@ export default function Home() {
 		>
 			<NavBar></NavBar>
 			{/* landing */}
-			<section className="container flex justify-center px-6 mx-auto min-h-700 md:px-12 sm:min-h-400">
-				<div className="flex flex-col items-center justify-around mx-auto sm:flex-row ">
+			<section className="container flex justify-center px-6 mx-auto overflow-x-hidden sm:overflow-x-visible min-h-700 md:px-12 sm:min-h-400">
+				<div className="relative flex flex-col items-center justify-around mx-auto sm:flex-row ">
 					{/* Text */}
-					<div className="w-full mt-16 text-center sm:w-1/2 sm:text-left sm:mt-0 sm:mb-12">
-						<h1 className="text-5xl text-pink-500 sm:text-6xl ">
+					<div className="z-10 w-full mt-16 text-center sm:w-1/2 sm:text-left sm:mt-0 sm:mb-12">
+						<h1 className="mx-auto text-5xl text-pink-500 sm:text-6xl max-w-4/5 sm:mx-0 sm:max-w-none">
 							Zjedzmy trochę słodkości
 						</h1>
 						<h3 className="mt-6 text-sm text-gray-600 sm:text-md">
@@ -34,13 +35,15 @@ export default function Home() {
 						</div>
 					</div>
 					{/* Image */}
-					<div className="relative mx-auto w-80 h-80 bottom-4 sm:w-96 sm:h-96">
-						<Image
-							className="object-contain"
-							src="/images/cake-classic-01--large.png"
-							alt="Cake"
-							layout="fill"
-						/>
+					<div className="relative overflow-visible w-96 h-80 bottom-4 sm:w-96 sm:h-96">
+						<div className="absolute mx-auto -bottom-4 h-120 sm:h-full sm:right-0 w-140 -inset-x-1/4 sm:bottom-auto">
+							<Image
+								className="object-contain"
+								src="/images/cakeFeature.png"
+								alt="Cake"
+								layout="fill"
+							/>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -119,7 +122,27 @@ export default function Home() {
 					soufflé. Cookie bonbon sweet cheesecake sweet gummi bears.
 				</p>
 			</ProductFeature>
-			<Footer bgColor="bg-white" footerColor="bg-pink-100"></Footer>
+
+			<ProductFeature
+				bgColor="bg-pink-100"
+				direction="sm:flex-row"
+				imageSource="/images/sweets/cakesicle-01.png"
+				imageAlt="Słodkości"
+				pageLink="/info-slodkosci"
+				title="Słodkości"
+			>
+				<p className="max-w-sm mb-4 ml-2 text-sm text-gray-600">
+					Cupcake ipsum dolor sit amet fruitcake cookie cake. Dragée ice cream
+					cake icing brownie sesame snaps. Chocolate bar macaroon sweet roll
+					pudding bonbon. Jelly beans pudding topping.
+				</p>
+				<p className="max-w-sm mb-4 ml-2 text-sm text-gray-600">
+					Tiramisu cotton candy sesame snaps gingerbread halvah wafer gummies
+					soufflé. Cookie bonbon sweet cheesecake sweet gummi bears.
+				</p>
+			</ProductFeature>
+
+			<Footer bgColor="bg-pink-100" footerColor="bg-white"></Footer>
 		</motion.div>
 	);
 }
