@@ -32,7 +32,8 @@ export default function ProductFeature({
 						className="object-contain"
 						src={imageSource}
 						alt={imageAlt}
-						layout="fill"
+						width={320}
+						height={320}
 					/>
 				</div>
 
