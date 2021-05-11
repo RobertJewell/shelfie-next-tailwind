@@ -10,13 +10,10 @@ import ProductFeature from "../components/ProductFeature";
 
 export default function Home() {
 	return (
-		<motion.div
-			exit={{ opacity: 0 }}
-			className="font-serif bg-pink-100 sm:overflow-y-scroll sm:h-screen snap snap-y snap-mandatory sm:py-0"
-		>
+		<motion.div exit={{ opacity: 0 }} className="font-serif bg-pink-100">
 			<NavBar></NavBar>
 			{/* landing */}
-			<section className="container flex justify-center px-6 mx-auto overflow-x-hidden sm:overflow-x-visible min-h-700 md:px-12 sm:min-h-400">
+			<section className="container flex justify-center px-6 mx-auto overflow-x-hidden sm:overflow-x-visible min-h-700 md:px-12 sm:min-h-400 snap-start">
 				<div className="relative flex flex-col items-center justify-around mx-auto sm:flex-row ">
 					{/* Text */}
 					<div className="z-10 w-full mt-16 text-center sm:w-1/2 sm:text-left sm:mt-0 sm:mb-12">
@@ -27,7 +24,7 @@ export default function Home() {
 							Pracownia cukiernicza
 						</h3>
 						<div className="mt-12">
-							<Link href="contact" scroll={false}>
+							<Link href="/contact" scroll={false}>
 								<a className="px-4 py-3 my-4 text-sm text-white transition-colors bg-pink-500 rounded-xl hover:bg-pink-600">
 									Złóż zamówienie
 								</a>
@@ -41,7 +38,8 @@ export default function Home() {
 								className="object-contain"
 								src="/images/cakeFeature.png"
 								alt="Cake"
-								layout="fill"
+								width={540}
+								height={390}
 							/>
 						</div>
 					</div>
@@ -49,7 +47,7 @@ export default function Home() {
 			</section>
 			{/* About */}
 			<section className="h-screen px-6 overflow-hidden bg-white sm:max-h-500 sm:min-h-300 md:px-12 snap-center">
-				<div className="container flex flex-col items-center justify-around h-full mx-auto sm:justify-center sm:flex-row">
+				<div className="container relative flex flex-col items-center justify-around h-full mx-auto sm:justify-center sm:flex-row">
 					<div className="relative w-full h-64 mx-auto my-6 px-1/3">
 						<Image
 							className="object-contain rounded-2xl"

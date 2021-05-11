@@ -28,6 +28,7 @@ html {
 	max-height: 100vh;
 	/* mobile viewport bug fix */
 	max-height: -webkit-fill-available;
+	scroll-behavior: smooth;
 }
 
 .fullScreen {

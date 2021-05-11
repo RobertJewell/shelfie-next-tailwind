@@ -13,11 +13,11 @@ export default function ProductFeature({
 } = props) {
 	return (
 		<section
-			className={`h-screen py-4 overflow-hidden ${bgColor} sm:max-h-600 px-6
+			className={`min-h-screen py-4 overflow-hidden flex flex-col justify-center ${bgColor} sm:max-h-600 px-6
 			md:px-12 sm:min-h-500 snap-center`}
 		>
 			<div
-				className={`container flex flex-col items-center justify-around h-full mb-6 mx-auto align-middle ${
+				className={`container flex flex-col items-center justify-center mx-auto align-middle ${
 					direction === "sm:flex-row-reverse" && "lg:pl-36"
 				} 
 				${direction}`}
@@ -36,7 +36,7 @@ export default function ProductFeature({
 					/>
 				</div>
 
-				<div className="z-10 flex flex-col justify-center text-center h-3/5 sm:h-full sm:w-1/2 sm:text-left">
+				<div className="z-10 flex flex-col justify-center my-8 text-center h-3/5 sm:h-full sm:w-1/2 sm:text-left">
 					<h1 className="mb-8 text-5xl text-pink-500 sm:text-6xl ">{title}</h1>
 					{children}
 					<div className="mt-4">
