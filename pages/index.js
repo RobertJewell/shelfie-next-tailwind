@@ -46,32 +46,33 @@ export default function Home() {
 				</div>
 			</section>
 			{/* About */}
-			<section className="h-screen px-6 overflow-hidden bg-white sm:max-h-500 sm:min-h-300 md:px-12 snap-center">
-				<div className="container relative flex flex-col items-center justify-around h-full mx-auto sm:justify-center sm:flex-row">
-					<div className="relative w-full h-64 mx-auto my-6 px-1/3">
+			<section className="flex justify-center min-h-screen px-6 overflow-hidden bg-white sm:max-h-500 sm:min-h-400 md:px-12 snap-center">
+				<div className="container relative flex flex-col items-center justify-around h-full mx-auto my-auto sm:justify-center sm:flex-row">
+					<div className="relative flex justify-center w-full my-6">
 						<Image
-							className="object-contain rounded-2xl"
+							className="rounded-2xl"
 							src="/images/shelfie.jpg"
 							alt="cake"
-							layout="fill"
+							width={256}
+							height={256}
 						/>
 					</div>
-					<div className="px-6 font-serif text-sm text-gray-600 md lg:pr-24">
-						<h3 className="hidden mb-6 text-xl font-bold text-pink-500 sm:block">
+					<div className="px-6 pt-6 font-serif text-sm text-gray-600 sm:pt-0 md lg:pr-24">
+						<h3 className="hidden mb-4 text-xl font-bold text-pink-500 sm:block">
 							Hey!
 						</h3>
-						<p className="mb-6">
+						<p className="mb-4">
 							Nazywam się Emilia i moją pasją jest osładzanie ludziom życia.
 							Zjedzmy Trochę Słodkości zaczęło się jako blog, a od kilku lat
 							moja pasja przerodziła się w pełnoetatowy zawód.
 						</p>
-						<p className="mb-6">
+						<p className="mb-4">
 							Słodkości wykonane w pracowni mają w składzie tylko naturalne
 							składniki najwyższej jakości od zaufanych dostawców. Jestem
 							zdania, że tylko świeże, najlepszej jakości produkty mogą być
 							gwarancją pysznego smaku.
 						</p>
-						<p className="mb-6">
+						<p className="mb-4">
 							Z przyjemnością wykonam słodkości na ważne dla Was wydarzenie.
 							Polecam zapoznać się z dostępnymi opcjami i w razie pytań
 							zapraszam do kontaktu.
