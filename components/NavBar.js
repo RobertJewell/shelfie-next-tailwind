@@ -14,7 +14,7 @@ const NavBar = () => {
 				<div className="w-6 h-1 bg-pink-500 rounded-full "></div>
 			</div>
 			<div className="container px-6 mx-auto font-bold text-gray-600 sm:px-6 md:px-12 ">
-				<div className="flex flex-row items-center justify-between h-16 mx-auto font-sans text-sm ">
+				<div className="flex flex-row items-center justify-between h-16 mx-auto text-sm ">
 					<Link href="/">
 						<a className="self-start">
 							<div className="h-12 overflow-hidden bg-pink-200 rounded-b-full ">
