@@ -25,10 +25,13 @@ export default function ContactForm() {
 	const { register, handleSubmit, formState } = useForm(formOptions);
 	const { errors } = formState;
 
-	function onSubmit(data) {
+	async function onSubmit(data) {
 		// display form data on success
-		console.log(JSON.stringify(data));
-		return false;
+		// console.log(JSON.stringify(data));
+		await fetch("/api/mail", {
+			method: "POST",
+			body: JSON.stringify(data),
+		});
 	}
 
 	return (

@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^2.4.0",
+    "@sendgrid/mail": "^7.4.4",
     "framer-motion": "^4.1.5",
     "next": "^10.2.0",
     "react": "17.0.2",
